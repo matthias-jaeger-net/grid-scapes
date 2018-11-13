@@ -3,4 +3,4 @@ Image based line grafic generator
 
 
 
-![schoeckl](out/schoeckl.jpg)
+![schoeckl](gridscape_1_1/out/schoeckl.jpg)
