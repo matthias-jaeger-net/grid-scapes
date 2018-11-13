@@ -1,40 +1,52 @@
 import processing.pdf.*;
 
+String[] images = {
+  "hochschwab", 
+  "schoeckl", 
+  "rotewand"
+};
+
+int scl = 6;
+int pad = 40;
+int image = 0;
+
 void settings () {
-  size(150, 150);
+  size(800, 800);
 }
 
 void setup() {
-
-  String[] paths ={
-    "hochschwab", 
-    "schoeckl", 
-    "rotewand"
-  };
-  
-  ArrayList<Cell> cells = new ArrayList<Cell>();
-
-  for (int i = 0; i < paths.length; i++) {
-
-    String path =  paths[i];
-
-    PImage landscape;
-    landscape = loadImage(path + ".jpg");
-    landscape.resize(width, height);
-    landscape.filter(BLUR, 2);
-    landscape.filter(POSTERIZE, 4);
+  while (image < images.length) {
+    String path = images[image];
 
     beginRecord(PDF, "out/" + path +".pdf");
-    for (int x = 0; x < width; x+=2) {
-      for (int y = 0; y < height; y+=2) {
+    background(255);
+
+    PImage landscape = loadImage(path + ".jpg");
+    landscape.resize(width, height);
+
+    PGraphics gridscape = createGraphics(width, height);
+    gridscape.beginDraw();
+    for (int x = 0; x < width; x+=scl) {
+      for (int y = 0; y < height; y+=scl) {
         color c = landscape.get(x, y);
-        cells.add(new Cell(x, y, 2, 2, c));
+        gridscape.pushMatrix();
+        gridscape.translate(x, y);
+        gridscape.strokeWeight(map(blue(c), 0, 255, 3, 1));
+        gridscape.rotate(map(red(c), 0, 255, 0, TAU));
+        gridscape.line(0, 0, (map(green(c), 0, 255, 12, 2)), 0);
+        gridscape.popMatrix();
       }
     }
-    for (Cell c : cells) {
-      c.render();
-    }
+    gridscape.endDraw();
+    image(gridscape, pad, pad, width-pad*2, height-pad*2);
+    noFill();
+    strokeWeight(2);
+    rect(pad, pad, width-pad*2, height-pad*2);
+    fill(0);
     endRecord();
+    save("out/" + path + ".jpg");
+    image++;
   }
+
   exit();
 }
