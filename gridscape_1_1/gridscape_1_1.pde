@@ -21,7 +21,7 @@ void setup() {
     beginRecord(PDF, "out/" + path +".pdf");
     background(255);
 
-    PImage landscape = loadImage(path + ".jpg");
+    PImage landscape = loadImage("in/" + path + ".jpg");
     landscape.resize(width, height);
 
     PGraphics gridscape = createGraphics(width, height);
