@@ -3,17 +3,18 @@
 
 ## Input images
 As an input to this program I am taking three images of different landscapes that I took while hikinging the mountains. 
-
 ![schoeckl](gridScapes/in/schoeckl.jpg)
-Rupertisteig, Schöckl 
 ![hochschwab](gridScapes/in/hochschwab.jpg)
-Trawiessattel, Hochschwab 
 ![schoeckl](gridScapes/in/rotewand.jpg)
-Rote Wand, Mixnitz 
 
 ## Rendered output
+Rupertisteig, Schöckl 
 ![schoeckl](gridScapes/out/schoeckl/schoeckl.jpg)
+
+Trawiessattel, Hochschwab 
 ![hochschwab](gridScapes/out/hochschwab/hochschwab.jpg)
+
+Rote Wand, Mixnitz 
 ![schoeckl](gridScapes/out/rotewand/rotewand.jpg)
 
 ## Copyright
