@@ -5,13 +5,11 @@
 As an input to this program I am taking three images of different landscapes that I took while hikinging the mountains. 
 
 ![schoeckl](gridScapes/in/schoeckl.jpg)
-### Am Rupertisteig, Schöckl 
-
+Rupertisteig, Schöckl 
 ![hochschwab](gridScapes/in/hochschwab.jpg)
-### Am Trawiessattel, Hochschwab 
-
+Trawiessattel, Hochschwab 
 ![schoeckl](gridScapes/in/rotewand.jpg)
-### Rote Wand, Mixnitz 
+Rote Wand, Mixnitz 
 
 ## Rendered output
 ![schoeckl](gridScapes/out/schoeckl/schoeckl.jpg)
