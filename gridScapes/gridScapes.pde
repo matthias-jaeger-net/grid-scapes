@@ -1,29 +1,49 @@
-import processing.pdf.*;
+/** 
+* gridScapes 
+* 
+* This program renders series of abstract line graphics, 
+* based on three small resolution images. 
+* 
+* Matthias Jäger, Graz 2018
+*/
 
+// Names of the given input images
 String[] images = {
   "hochschwab", 
   "schoeckl", 
   "rotewand"
 };
 
-int scl = 6;
-int pad = 40;
+// Program counter
 int image = 0;
 
-void settings () {
-  size(800, 800);
-}
+// Design Parameters
+int scl = 6;
+int pad = 40;
 
+// Utils to export a pdf 
+import processing.pdf.*;
+
+// setup called automatically
 void setup() {
+  
+  // Set a square canvas
+  size(800, 800);
+  
+  // Iterate over the given images
   while (image < images.length) {
+    
+    // Store each image as path 
     String path = images[image];
-
-    beginRecord(PDF, "out/" + path +".pdf");
-    background(255);
-
+    
+    // Start pdf 
+    beginRecord(PDF, "out/"+ path + "/" + path +".pdf");
+    
     PImage landscape = loadImage("in/" + path + ".jpg");
     landscape.resize(width, height);
 
+    // Reading the loaded landscape and render a grid of lines,
+    // based on the red, blue and green values of the image
     PGraphics gridscape = createGraphics(width, height);
     gridscape.beginDraw();
     for (int x = 0; x < width; x+=scl) {
@@ -38,15 +58,23 @@ void setup() {
       }
     }
     gridscape.endDraw();
+
+    
+    // Draw the resulting image smaller than the screen
     image(gridscape, pad, pad, width-pad*2, height-pad*2);
+    
+    // Add a border to the image 
     noFill();
     strokeWeight(2);
     rect(pad, pad, width-pad*2, height-pad*2);
-    fill(0);
+    
+    // Finish pdf
     endRecord();
-    save("out/" + path + ".jpg");
+
+    // Save a preview jpg in the output folder
+    save("out/"+ path + "/" + path + ".jpg");
+    
     image++;
   }
-
   exit();
 }
