@@ -1,8 +1,8 @@
 # grid-scapes
->This program renders series of abstract line graphics, based on three small resolution images. 
+>This program renders series of abstract line graphics, based on images data. As an input to this program I am taking three images of different landscapes that I shot, while hikinging in the mountains. 
+
 
 ## Input images
-As an input to this program I am taking three images of different landscapes that I took while hikinging the mountains. 
 ![schoeckl](gridScapes/in/schoeckl.jpg)
 ![hochschwab](gridScapes/in/hochschwab.jpg)
 ![schoeckl](gridScapes/in/rotewand.jpg)
