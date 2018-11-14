@@ -18,4 +18,4 @@ Rote Wand, Mixnitz
 ![schoeckl](gridScapes/out/rotewand/rotewand.jpg)
 
 ## Copyright
-Feel free to use my program with your own images and edit the output as you need it. You also might look at my output stored ![url](https://github.com/matthias-jaeger-net/grid-scapes/tree/master/gridScapes/out). 
+Feel free to use my program with your own images and edit the output as you need it. You also might look at my output stored in this repository.
