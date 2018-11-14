@@ -74,7 +74,10 @@ void setup() {
     // Save a preview jpg in the output folder
     save("out/"+ path + "/" + path + ".jpg");
     
+    // Next image
     image++;
   }
+  
+  // No more images left
   exit();
 }
