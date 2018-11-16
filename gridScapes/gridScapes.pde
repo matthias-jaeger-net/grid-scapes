@@ -11,7 +11,10 @@
 String[] images = {
   "hochschwab", 
   "schoeckl", 
-  "rotewand"
+  "rotewand",
+  "hochreichart",
+  "grossofen",
+  "ringkogel"
 };
 
 // Program counter
@@ -29,9 +32,12 @@ void setup() {
   
   // Set a square canvas
   size(800, 800);
+    
   
   // Iterate over the given images
   while (image < images.length) {
+    background(255);  
+
     
     // Store each image as path 
     String path = images[image];
@@ -67,12 +73,14 @@ void setup() {
     noFill();
     strokeWeight(2);
     rect(pad, pad, width-pad*2, height-pad*2);
+
+    // Save a preview jpg in the output folder
+    save("out/"+ path + "/" + path + ".png");
+
     
     // Finish pdf
     endRecord();
 
-    // Save a preview jpg in the output folder
-    save("out/"+ path + "/" + path + ".jpg");
     
     // Next image
     image++;
