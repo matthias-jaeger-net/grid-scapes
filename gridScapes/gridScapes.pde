@@ -2,7 +2,7 @@
 * gridScapes 
 * 
 * This program renders series of abstract line graphics, 
-* based on three small resolution images. 
+* based on small resolution images. 
 * 
 * Matthias Jäger, Graz 2018
 */
@@ -32,12 +32,11 @@ void setup() {
   
   // Set a square canvas
   size(800, 800);
-    
   
   // Iterate over the given images
   while (image < images.length) {
+    // Clear background
     background(255);  
-
     
     // Store each image as path 
     String path = images[image];
@@ -64,7 +63,6 @@ void setup() {
       }
     }
     gridscape.endDraw();
-
     
     // Draw the resulting image smaller than the screen
     image(gridscape, pad, pad, width-pad*2, height-pad*2);
@@ -76,11 +74,9 @@ void setup() {
 
     // Save a preview jpg in the output folder
     save("out/"+ path + "/" + path + ".png");
-
     
     // Finish pdf
     endRecord();
-
     
     // Next image
     image++;
