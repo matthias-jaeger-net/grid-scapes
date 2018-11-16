@@ -6,6 +6,10 @@
 ![schoeckl](gridScapes/in/schoeckl.jpg)
 ![hochschwab](gridScapes/in/hochschwab.jpg)
 ![schoeckl](gridScapes/in/rotewand.jpg)
+![hochreichart](gridScapes/in/hochreichart.jpg)
+![grossofen](gridScapes/in/grossofen.jpg)
+![ringkogel](gridScapes/in/ringkogel.jpg)
+
 
 ## Rendered output
 Rupertisteig, Schöckl 
@@ -16,6 +20,16 @@ Trawiessattel, Hochschwab
 
 Rote Wand, Mixnitz 
 ![schoeckl](gridScapes/out/rotewand/rotewand.jpg)
+
+Hochreichart, Seckauer Tauern 
+![hochreichart](gridScapes/out/hochreichart/hochreichart.jpg)
+
+Grossofen, Pack Alpe
+![grossofen](gridScapes/out/grossofen/grossofen.jpg)
+
+Ringkogel, Seckauer Tauern 
+![ringkogel](gridScapes/out/ringkogel/ringkogel.jpg)
+
 
 ## Copyright
 Feel free to use my program with your own images and edit the output as you need it. You also might look at my output stored in this repository.
