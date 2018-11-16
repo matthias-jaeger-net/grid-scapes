@@ -73,7 +73,7 @@ void setup() {
     rect(pad, pad, width-pad*2, height-pad*2);
 
     // Save a preview jpg in the output folder
-    save("out/"+ path + "/" + path + ".png");
+    save("out/"+ path + "/" + path + ".jpg");
     
     // Finish pdf
     endRecord();
