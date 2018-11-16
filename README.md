@@ -2,14 +2,10 @@
 >This program renders series of abstract line graphics, based on images data. As an input to this program I am taking three images of different landscapes that I shot, while hikinging in the mountains. 
 
 
-## Input images
+## Example input images
 ![schoeckl](gridScapes/in/schoeckl.jpg)
 ![hochschwab](gridScapes/in/hochschwab.jpg)
 ![schoeckl](gridScapes/in/rotewand.jpg)
-![hochreichart](gridScapes/in/hochreichart.jpg)
-![grossofen](gridScapes/in/grossofen.jpg)
-![ringkogel](gridScapes/in/ringkogel.jpg)
-
 
 ## Rendered output
 Rupertisteig, Schöckl 
