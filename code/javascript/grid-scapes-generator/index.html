@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>    
+    <div id="gridscape">
+      
+      <div id="workspace">
+      </div>
+      
+      <div id="reference">
+        <div class="ui-group">
+          <label>Reference image</label>
+          <div id="refimage"></div>
+          <div id="refselect"></div>
+        </div>
+        
+      <div id="controls">
+          
+          <div class="ui-group">
+            <label>Colors</label>
+            <div id="option-colors"></div>                   
+          </div>
+          
+          <div class="ui-group">
+            <label>Resolution</label>
+            <div id="slider-resolution"></div> 
+          </div>
+          
+          <div class="ui-group">
+            <label>Thickness</label>
+            <div id="slider-thickness"></div>                  
+          </div>
+          
+          <div class="ui-group">
+            <label>Linelength</label>
+            <div id="slider-linelength"></div>                  
+          </div>
+          
+          <div class="ui-group">
+            <label>Angleshift</label>
+            <div id="slider-angleshift"></div>                   
+          </div>
+          
+          <div class="ui-group">
+            <label>Frame</label>
+            <div id="slider-frame"></div>                   
+          </div>
+        
+          <div class="ui-group">
+            <label>Exports</label>
+            <input type="submit" value="Save JPG" onclick="javascript:save('out.jpg')">  
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <script src="sketch.js"></script>
+  
+
+</body></html>

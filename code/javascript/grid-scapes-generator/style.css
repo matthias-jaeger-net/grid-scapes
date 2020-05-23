@@ -1,0 +1,61 @@
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  background: #222;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="submit"],
+input[type="file"] {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#gridscape {
+  margin: 0 auto;
+}
+
+#workspace {
+  margin-left: 200px;
+}
+
+#reference {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background: #333;
+  color: #EEE;
+}
+
+#controls {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ui-group {
+  margin-top: 4px;
+  padding: 5px;
+}
+.ui-group label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
