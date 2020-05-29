@@ -1,30 +1,14 @@
 # grid-scapes
+
 >This program renders series of abstract line graphics, based on images data. As an input to this program I am taking three images of different landscapes that I shot, while hikinging in the mountains. 
 
 
 ## Example input images
-![schoeckl](gridScapes/in/schoeckl.jpg)
-![hochschwab](gridScapes/in/hochschwab.jpg)
-![schoeckl](gridScapes/in/rotewand.jpg)
+![grid-scapes-test-print](documentation/IMG_6399.JPG)
+![grid-scapes-test-print](documentation/IMG_6401.JPG)
+![grid-scapes-test-print](documentation/IMG_6405.JPG)
 
 ## Rendered output
-Rupertisteig, Schöckl 
-![schoeckl](gridScapes/out/schoeckl/schoeckl.jpg)
-
-Trawiessattel, Hochschwab 
-![hochschwab](gridScapes/out/hochschwab/hochschwab.jpg)
-
-Rote Wand, Mixnitz 
-![schoeckl](gridScapes/out/rotewand/rotewand.jpg)
-
-Hochreichart, Seckauer Tauern 
-![hochreichart](gridScapes/out/hochreichart/hochreichart.jpg)
-
-Grossofen, Pack Alpe
-![grossofen](gridScapes/out/grossofen/grossofen.jpg)
-
-Ringkogel, Seckauer Tauern 
-![ringkogel](gridScapes/out/ringkogel/ringkogel.jpg)
 
 
 ## Copyright
